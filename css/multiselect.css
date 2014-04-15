@@ -1,0 +1,135 @@
+#commerces-container {
+	height: 270px;
+}
+#commerces-container .spinner {
+    position: relative;
+}
+ul.multiselect{
+	list-style: none;
+	background-color: #1E2932;
+	padding: 10px;
+	color: white;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	margin-top: 15px;
+	height: 250px;
+	
+}
+.multiselect li{
+	line-height: 30px;
+	background-color: #d9dbce;
+	color: black;
+	margin: 5px 0;
+	padding: 0 30px 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	-webkit-border-radius: 3px;
+	-moz-border-radius:3px;
+	border-radius: 3px;
+	cursor: pointer;
+    position: relative;
+    font-size: 1.55em;
+}
+.multiselect .selected{
+	background-color: #3399CC;
+	-webkit-transition: background-color 0.45s;
+	-moz-transition: background-color 0.45s;
+	-o-transition: background-color 0.45s;
+	-ms-transition: background-color 0.45s;
+	transition: background-color 0.45s;
+	color: white;
+}
+.multiselect li:hover{
+	background-color: #3399CC;
+	color: white;
+	-webkit-transition: background-color 0.45s;
+	-moz-transition: background-color 0.45s;
+	-o-transition: background-color 0.45s;
+	-ms-transition: background-color 0.45s;
+	transition: background-color 0.45s;
+}
+
+/* drag drop */
+.drag-input {
+	border: 3px dashed #1E2932;
+	clear: both;
+	width: 450px;
+	height: 200px;
+	float: left;
+	-webkit-border-radius: 3px;
+	-moz-border-radius:3px;
+	border-radius: 3px;
+	display: inline;
+}
+.drag-input	p {
+	margin: 75px auto;
+	width: 100%;
+	color: #1E2932;
+	text-align: center;
+	font-size: 30px;
+}
+input[type=file] {
+	width: 450px;
+	position : absolute;
+    margin: -5px 0 0 0;
+    padding: 0;
+    height: 200px;                                            
+    opacity: 0;
+    cursor: pointer;
+    zIndex :  7483583;
+}
+.drag-input p:hover
+	-webkit-transition: background-color 0.2s;
+	-moz-transition: background-color 0.2s;
+	-o-transition: background-color 0.2s;
+	-ms-transition: background-color 0.2s;
+	transition: background-color 0.2;
+	cursor: pointer;
+	border-color: #3399CC;
+}
+.drag-input.disabled {
+	opacity: filter;
+	cursor: auto;
+}
+.drag-input:hover, .drag-input.hover {
+	border-color: #3399CC;
+}
+.drag-input:hover p, .drag-input.hover p {
+	color: #3399CC;
+}
+
+#commerces-container .disable-mask {
+	position: absolute;
+	-webkit-border-radius: 3px;
+	-moz-border-radius:3px;
+	border-radius: 3px;
+	background-color: black;
+	opacity: 0.7;
+	width: 450px;
+	height: 270px;
+	display: none;
+	z-index: 333;
+}
+
+/*** hints **/
+.tip {
+	display: inline;
+	position: absolute;
+	margin-left: 10px;
+	background: url(../images/tips.png) no-repeat;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+/** errors **/
+input.error {
+	border: 1px solid red !important;
+}
+
+/*** **/
+.required {
+	color: red;
+}
